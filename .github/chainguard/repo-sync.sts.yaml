@@ -1,8 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject:
-  - repo:InkCanvasForClass/community:ref:refs/tags/*
-  - repo:InkCanvasForClass/community:ref:refs/heads/beta
-  - repo:InkCanvasForClass/community:ref:refs/heads/main
+subject_pattern: '^repo:InkCanvasForClass/community:ref:refs/(heads/(beta|main)|tags/.*)$'
 
 permissions:
   contents: write
